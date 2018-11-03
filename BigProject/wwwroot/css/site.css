@@ -1,0 +1,19 @@
+﻿/*site.css*/
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+label{
+    font-weight:bold;
+    display: block;
+}
+
+input[type=text], input[type=password], textarea {
+    width: 150px;
+}
+
+input[type=submit]
+{
+    width:auto;
+}
