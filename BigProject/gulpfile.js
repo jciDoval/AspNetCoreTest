@@ -15,7 +15,6 @@ const paths = {
     webroot: "./wwwroot/"
 };
 
-paths.concatCssDest = "site.min.css";
 
 gulp.task("minify", function () {
 
@@ -25,7 +24,7 @@ gulp.task("minify", function () {
             .pipe(concat("jciglesias.min.js"))
             .pipe(gulp.dest(paths.webroot + "out/lib/site")),
         gulp.src([paths.webroot + "css/*.css"])
-            .pipe(concat(paths.concatCssDest))
+            .pipe(concat("site.min.css"))
             .pipe(cssmin())
             .pipe(gulp.dest(paths.webroot + "out/css/")) 
     ];
