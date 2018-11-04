@@ -60,24 +60,28 @@ input[type=submit]
     color:#eee;
 }
 
-#sidebar{
+#sidebar {
     background: #2a2c36;
     color: #eee;
     position: fixed;
     height: 100%;
     width: 250px;
-    overflow:hidden;
-    left:0;
-    margin:0;
+    overflow: hidden;
+    left: 0;
+    margin: 0;
+    transition: left ease .25s;
 }
 
 #sidebar.hide-sidebar{
     left:-250px;
+    transition:left ease .25s;
 }
 
-#wrapper{
+#wrapper {
     margin: 0 0 0 250px;
+    transition: margin-left ease .25s;
 }
 #wrapper.hide-sidebar{
     margin-left:0px;
+    transition: margin-left ease .25s;
 }

@@ -25,7 +25,7 @@ gulp.task("minify", function () {
             .pipe(gulp.dest(paths.webroot + "out/lib/site")),
         gulp.src([paths.webroot + "css/*.css"])
             .pipe(concat("site.min.css"))
-            .pipe(cssmin())
+            //.pipe(cssmin()) //Comentamos esta linea para que no nos haga la minificación
             .pipe(gulp.dest(paths.webroot + "out/css/")) 
     ];
 
